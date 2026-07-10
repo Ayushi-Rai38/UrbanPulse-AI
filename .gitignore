@@ -1,0 +1,86 @@
+# ==========================================
+# Streamlit Specific
+# ==========================================
+# Critical: Never commit your local API keys or database credentials
+.streamlit/secrets.toml
+
+# Streamlit local development cache and data logs
+.streamlit/static/
+.streamlit/config.toml
+
+
+# ==========================================
+# Machine Learning (ML) & Data Science
+# ==========================================
+# Large datasets should not be stored in Git
+*.csv
+*.xlsx
+*.json
+data/
+datasets/
+
+# Large serialized ML models, weights, and matrices
+*.pkl
+*.pkl.z
+*.joblib
+*.h5
+*.pth
+*.pt
+*.onnx
+*.pb
+*.tflite
+models/
+weights/
+
+# MLOps, experiment tracking, and pipelines
+.wandb/
+wandb/
+mlruns/
+.mlflow/
+lightning_logs/
+.dvc/
+
+
+# ==========================================
+# Python Core & Virtual Environments
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments (prevent uploading massive library files)
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+include/
+share/
+
+
+# ==========================================
+# Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+
+# ==========================================
+# Environment Variables & Security
+# ==========================================
+.env
+.env.local
+.env.*
+.gitsecret/
+
+
+# ==========================================
+# IDEs and OS Metadata
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
